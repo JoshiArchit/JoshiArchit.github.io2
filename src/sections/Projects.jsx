@@ -69,7 +69,7 @@ const Projects = () => {
       <div className="hidden sm:flex projects-section h-full  flex-col mb-[2%]">
         <div className="flex projects-carousel h-full justify-between  items-center">
           <div
-            className="left-arrow arrow-btn w-[20%] flex justify-start"
+            className="left-arrow arrow-btn w-[25%] flex justify-start"
             onClick={() => handleNavigation("left")}
           >
             <button>
@@ -122,7 +122,7 @@ const Projects = () => {
 
                       <div className="project-desc text-left text-white text-lg font-normal w-full">
                         <p>{project.desc}</p>
-                        <br/>
+                        <br />
                         <p>{project.subdesc}</p>
                       </div>
 
@@ -135,6 +135,7 @@ const Projects = () => {
                               key={tech.id}
                               src={tech.path}
                               alt={tech.name}
+                              title={tech.name}
                               className="w-10"
                             />
                           ))}
@@ -150,7 +151,7 @@ const Projects = () => {
                               src="assets/github.svg"
                               alt="github"
                               className="w-10"
-                              title="View and Fork project on GitHub"
+                              title="Check it out on GitHub"
                             />
                           </a>
                         </div>
@@ -162,7 +163,7 @@ const Projects = () => {
           </div>
 
           <div
-            className="right-arrow arrow-btn w-[20%] flex justify-end"
+            className="right-arrow arrow-btn w-[25%] flex justify-end"
             onClick={() => handleNavigation("right")}
           >
             <button>
